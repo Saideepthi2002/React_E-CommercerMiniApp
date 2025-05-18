@@ -1,0 +1,241 @@
+/* App.css */
+
+/* ========== Global Reset ========== */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+}
+
+/* ========== Home Page Styles ========== */
+
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.home-product {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: #e7a6b4e9;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.home-product:hover {
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+   transform: translateY(-6px) scale(1.02);
+}
+
+.home-product-image {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.home-product-title {
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: #333;
+  height: 48px;
+  overflow: hidden;
+}
+
+.home-product-price {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 0.8rem;
+}
+
+.home-add-btn {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.home-add-btn:hover {
+  background-color: #1d4ed8;
+}
+
+.loading-text {
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 2rem;
+  color: #555;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/* ----------------cart------------ */
+.cart-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  background-color: #c56959;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgb(0 0 0 / 0.1);
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.cart-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 1rem;
+  background-color: #fafafa;
+}
+
+.cart-item-image {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin-right: 1.5rem;
+  border-radius: 6px;
+  background-color: white;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.1);
+}
+
+.cart-item-details {
+  flex: 1;
+  text-align: left;
+}
+
+.cart-item-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.cart-total {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: right;
+  color: #2ecc71; /* nice green */
+}
+.chkbtn {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin: 2rem auto 0;
+  padding: 0.75rem 0;
+  background-color: #2ecc71; /* matching your cart-total green */
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(46, 204, 113, 0.4);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.chkbtn:hover {
+  background-color: #27ae60; /* darker green on hover */
+  box-shadow: 0 6px 12px rgba(39, 174, 96, 0.6);
+}
+
+
+
+
+
+
+
+
+
+/* Product Detail styles */
+/* Smaller Product Detail styles */
+
+.product-detail-container {
+  max-width: 350px;
+  margin: 1.5rem auto;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+  color: #333;
+  text-align: center;
+}
+
+.product-detail-image {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin: 0 auto 1rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.05);
+  background-color: white;
+}
+
+.product-detail-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  color: #222;
+}
+
+.product-detail-description {
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+  color: #555;
+  line-height: 1.3;
+}
+
+.product-detail-price {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #27ae60;
+  margin-bottom: 1rem;
+}
+
+.product-detail-button {
+  background-color: #2d79ff;
+  color: white;
+  border: none;
+  padding: 0.4rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.product-detail-button:hover {
+  background-color: #1a4ed8;
+}
